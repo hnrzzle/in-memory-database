@@ -9,7 +9,7 @@ describe('store', () => {
 
     const details = { name: 'tesla', model: 'S' };
     const details2 = { name: 'ford', model: 'focus' };
-
+    
     it('save generates an id', () => {
         const tesla = newStore.save(details);
         const checkIfId = () => {
