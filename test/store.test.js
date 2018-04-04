@@ -23,7 +23,7 @@ describe('store', () => {
     });
     it('get returns the object with that id', () => {
         const tesla = newStore.save(details);
-        const ford = newStore.save(details2);
+        const ford = newStore.save(details2); // eslint-disable-line
 
         const got = newStore.get(tesla._id);
 
@@ -45,7 +45,7 @@ describe('store', () => {
         assert.deepEqual(allObj, []);
     });
     it('.remove(<id>) removes object from array matching id', () => {
-        const tesla = newStore.save(details);
+        const tesla = newStore.save(details); // eslint-disable-line
         const ford = newStore.save(details2);
 
         const removeFord = newStore.remove(ford._id);
@@ -53,8 +53,8 @@ describe('store', () => {
         assert.deepEqual(removeFord, { remove: true });
     });
     it('.remove(<id>) returns { remove: false } if id DNE', () => {
-        const tesla = newStore.save(details);
-        const ford = newStore.save(details2);
+        const tesla = newStore.save(details); // eslint-disable-line
+        const ford = newStore.save(details2); // eslint-disable-line
 
         const tryRemove = newStore.remove(234);
 
