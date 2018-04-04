@@ -23,5 +23,8 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "mocha": "^5.0.5"
+  },
+  "dependencies": {
+    "shortid": "^2.2.8"
   }
 }
